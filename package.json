@@ -49,6 +49,7 @@
     "react-dom": "^0.14.3",
     "react-redux": "^4.1.1",
     "redux-thunk": "^1.0.3",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "express": "^4.13.3"
   }
 }
