@@ -1,9 +1,10 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as CounterActions from '../actions/CounterActions';
+// import * as CounterActions from '../actions/CounterActions';
 import Counter from '../components/Counter';
 import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -16,10 +17,8 @@ export default class App extends Component {
     const { counter, actions } = this.props;
     return (
       <div className="main-app-container">
-        <div className="main-app-nav">Simple Redux Boilerplate</div>
-        {/* notice that we then pass those unpacked props into the Counter component */}
-        <Counter counter={counter} actions={actions} />
-        <Footer />
+        <Navbar />
+        <div className="main-app-nav">Welcome to Dashwink</div>        
       </div>
     );
   }
@@ -63,7 +62,7 @@ function mapDispatchToProps(dispatch) {
  * More info: https://github.com/rackt/react-redux
  */
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+// export default connect(
+//   mapStateToProps,
+//   mapDispatchToProps
+// )(App);
